@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Ipad_Landscape.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Food Centric</title>
+</head>
+
+<body>
+
+<!-- Deals-Dealing_Now -->
+<div data-role="page" id="deals-dealing-now" class="home-background">
+    <div data-role="header" data-position="fixed" class="ui-grid-a home-header">
+        <div>
+            <img class="potrait-home-logo" src="./images/logo/Food Centric-logos_transparent.png" />
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </div>
+    </div>
+    <div class="scrollable-small-wrapper">
+        <div class="scrollable-small">
+            <a href="#home" class="scrollable-small-btn"> Home </a>
+            <a href="#deals-dealing-now" class="scrollable-small-btn"> Deals </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Find Shops </a>
+            <a href="#food-categories" class="scrollable-small-btn" > Food Categories </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Contact Us </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > QR Scanner </a>
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Cart </a>-->
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Shops </a>-->
+        </div>
+    </div>
+    <div style="background-color:#C8F1F0; height: 20px" >
+        <div style="background-color: white; text-align: center" > <h1> Deals </h1></div>
+    </div>
+    <br>
+    <div>
+        <div class="split dealing-now-left">
+            <div class="centered">
+                <h2>Dealing Now</h2>
+            </div>
+        </div>
+        <div class="split dealing-now-right">
+            <div class="centered">
+                <a id="toGoal" href="#deals-goals" style="text-decoration: none"><h2>Goals</h2></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="poi-background" >
+        <div id="deals-card-1" class="poi-card">
+            <img class="poi-images" src="images/food-images/pizza.png" >
+            <div class="poi-card-txt">
+                <h2 style="margin-top: -15px">PIZZA</h2>
+                <p style="color: #DA4144;
+                    margin-left: 300px;
+                    font-weight: 900;
+                    font-size: 25px;
+                    display: inline-block;
+                    margin-top: -100px"> 50 Points </p>
+                <p style="margin-top: -60px">Dictum tortor nunc nibh egestas</p>
+                <input id="poi-pizza-cheese" type="checkbox"/>
+                <label for="poi-pizza-cheese" style="margin-top: 10px">Extra Cheese (LKR 50)</label>
+                <input id="poi-pizza-spicy" type="checkbox">
+                <label for="poi-pizza-spicy">Extra Spicy (LKR 20)</label>
+                <p style="color: #4DACA9; ">LKR 450.00</p>
+                <input id="deals-card-btn-1" type="button" class="cart-checkout-btn" value="BUY"/>
+            </div>
+            <div class='overlay'>
+                <div class='popup'>
+                    <div class='close'>&#10006;</div><!-- close button-->
+                    <h1>Order Confirmed</h1> <!-- title food the popup-->
+                    <!-- popup content goes here -->
+                    <h2>This Order will be processed !</h2>
+                    <h2>This Product offers goal points. Check your Goals page</h2>
+                    <h3>Thanks for ordering</h3>
+                </div>
+            </div>
+
+        </div>
+        <div id="deals-card-2" class="poi-card">
+            <img class="poi-images" src="images/food-images/kottu.png" >
+            <div class="poi-card-txt">
+                <h2 style="margin-top: -15px">KOTHTHU</h2>
+                <p style="color: #DA4144;
+                    margin-left: 300px;
+                    font-weight: 900;
+                    font-size: 25px;
+                    display: inline-block;
+                    margin-top: -100px"> 33 Points </p>
+                <p style="margin-top: -60px">Dictum tortor nunc nibh egestas</p>
+                <input id="poi-kottu-cheese" type="checkbox"/>
+                <label for="poi-kottu-cheese" style="margin-top: 10px">Extra Cheese (LKR 50)</label>
+                <input id="poi-kottu-spicy" type="checkbox">
+                <label for="poi-kottu-spicy">Extra Spicy (LKR 20)</label>
+                <p style="color: #4DACA9; ">LKR 600.00</p>
+                <input id="deals-card-btn-2" type="button" class="cart-checkout-btn" value="BUY"/>
+            </div>
+            <div class='overlay'>
+                <div class='popup'>
+                    <div class='close'>&#10006;</div><!-- close button-->
+                    <h1>Order Confirmed</h1> <!-- title food the popup-->
+                    <!-- popup content goes here -->
+                    <h2>This Order will be processed !</h2>
+                    <h2>This Product offers goal points. Check your Goals page</h2>
+                    <h3>Thanks for ordering</h3>
+                </div>
+            </div>
+
+        </div>
+        <div id="deals-card-3" class="poi-card">
+            <img class="poi-images" src="images/food-images/rice.png" >
+            <div class="poi-card-txt">
+                <h2 style="margin-top: -15px">FRIED RICE</h2>
+                <p style="color: #DA4144;
+                    margin-left: 300px;
+                    font-weight: 900;
+                    font-size: 25px;
+                    display: inline-block;
+                    margin-top: -100px"> 17 Points </p>
+                <p style="margin-top: -60px">Dictum tortor nunc nibh egestas</p>
+                <input id="poi-rice-cheese" type="checkbox"/>
+                <label for="poi-rice-cheese" style="margin-top: 10px">Extra Cheese (LKR 50)</label>
+                <input id="poi-rice-spicy" type="checkbox">
+                <label for="poi-rice-spicy">Extra Spicy (LKR 20)</label>
+                <p style="color: #4DACA9; ">LKR 250.00</p>
+                <input id="deals-card-btn-3" type="button" class="cart-checkout-btn" value="BUY"/>
+            </div>
+            <div class='overlay'>
+                <div class='popup'>
+                    <div class='close'>&#10006;</div><!-- close button-->
+                    <h1>Order Confirmed</h1> <!-- title food the popup-->
+                    <!-- popup content goes here -->
+                    <h2>This Order will be processed !</h2>
+                    <h2>This Product offers goal points. Check your Goals page</h2>
+                    <h3>Thanks for ordering</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Deals-Goals -->
+<div data-role="page" id="deals-goals" class="home-background">
+    <div data-role="header" data-position="fixed" class="ui-grid-a home-header">
+        <div>
+            <img class="potrait-home-logo" src="./images/logo/Food Centric-logos_transparent.png" />
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </div>
+    </div>
+    <div class="scrollable-small-wrapper">
+        <div class="scrollable-small">
+            <a href="#potrait-home" class="scrollable-small-btn"> Home </a>
+            <a href="#deals-dealing-now" class="scrollable-small-btn"> Deals </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Find Shops </a>
+            <a href="#food-categories" class="scrollable-small-btn" > Food Categories </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Contact Us </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > QR Scanner </a>
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Cart </a>-->
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Shops </a>-->
+        </div>
+    </div>
+
+    <div style="background-color:#C8F1F0; height: 20px" >
+        <div style="background-color: white; text-align: center" > <h1> Deals </h1></div>
+    </div>
+    <br>
+    <div>
+        <div class="split goals-left">
+            <div class="centered">
+                <a href="#deals-dealing-now" style="text-decoration: none"> <h2>Dealing Now</h2></a>
+            </div>
+        </div>
+        <div class="split goals-right">
+            <div class="centered">
+                <h2>Goals</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="poi-background" >
+        <div class="coupon">
+            <img class="coupon-images" src="images/goals/coupon.png" >
+            <div style="display: inline-block; color: #E84C4F; ">
+                <h1>10% Discount</h1>
+                <h2>Worth Coupon</h2>
+                <a  id="coupon-btn" href="#coupon-claim-result" type="button" class="coupon-btn"> Claim Coupon </a>
+            </div>
+            <div style="margin-top: 100px">
+                <div id="myProgress">
+                    <div id="myBar" class="myBar"></div>
+                </div>
+                <div>
+                    <p id="val" style="margin-left: 25%; font-size:25px; font-weight: bolder"></p>
+                    <p style="margin-left: 30%; font-size:25px; font-weight: bolder; margin-top: -57px"> / 100  </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</div>
+
+<!--Claim-Coupon-->
+<div data-role="page" id="coupon-claim-result" class="home-background">
+    <div data-role="header" data-position="fixed" class="ui-grid-a home-header">
+        <div>
+            <img class="potrait-home-logo" src="./images/logo/Food Centric-logos_transparent.png" />
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </div>
+    </div>
+    <div class="scrollable-small-wrapper">
+        <div class="scrollable-small">
+            <a href="#potrait-home" class="scrollable-small-btn"> Home </a>
+            <a href="#deals-dealing-now" class="scrollable-small-btn"> Deals </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Find Shops </a>
+            <a href="#food-categories" class="scrollable-small-btn" > Food Categories </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Contact Us </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > QR Scanner </a>
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Cart </a>-->
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Shops </a>-->
+        </div>
+    </div>
+
+    <!--    <div style="background-color:#C8F1F0; height: 20px" >-->
+    <!--        <div style="background-color: white; text-align: center" > <h1> Deals </h1></div>-->
+    <!--    </div>-->
+    <!--    <br>-->
+    <!--    <div>-->
+    <!--        <div class="split goals-left">-->
+    <!--            <div class="centered">-->
+    <!--                <a href="#deals-dealing-now" style="text-decoration: none"> <h2>Dealing Now</h2></a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="split goals-right">-->
+    <!--            <div class="centered">-->
+    <!--                <h2>Goals</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <br>
+    <div class="poi-background" >
+        <div class="coupon-view">
+            <div style="display: inline-block; color: #E84C4F; margin-left: 35%">
+                <h1>Congratulations</h1>
+            </div>
+            <img class="celeb-image" src="images/goals/celebs.png" >
+            <div style="display: inline-block; color: #E84C4F; margin-left: 37%">
+                <h1>10% Discount</h1>
+                <h3 style="margin-left: -20%; color: black">Use This Coupon code on any order to claim the discount</h3>
+                <h3 style="margin-left: 13%; color:#004644 ">Q346L$5nK</h3>
+                <p style="margin-left: 10%; margin-top: -30px">_ _ _ _ _ _ _ _ _ _</p>
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+</div>
+
+<!--Food-Categories-->
+<div data-role="page" id="food-categories" class="home-background">
+    <div data-role="header" data-position="fixed" class="ui-grid-a home-header">
+        <div>
+            <img class="potrait-home-logo" src="./images/logo/Food Centric-logos_transparent.png" />
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </div>
+    </div>
+    <div class="scrollable-small-wrapper">
+        <div class="scrollable-small">
+            <a href="#deals-dealing-now" class="scrollable-small-btn"> Home </a>
+            <a href="#deals-dealing-now" class="scrollable-small-btn"> Deals </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Find Shops </a>
+            <a href="#food-categories" class="scrollable-small-btn" > Food Categories </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > Contact Us </a>
+            <a href="#potrait-home" class="scrollable-small-btn" > QR Scanner </a>
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Cart </a>-->
+            <!--            <a href="#potrait-home" class="scrollable-small-btn" > Shops </a>-->
+        </div>
+    </div>
+    <h1 style="margin-left: 3%; color: #E84C4F">Food Categories</h1>
+    <input id="sort" type="button" class="cart-checkout-btn" value="Sort By Price"
+           style="margin-left: 80%;
+           float: none;
+           margin-bottom: -20px !important;
+           width: 125px !important;"/>
+    <div class='overlay'>
+        <div class='popup' style="height: 8% !important; width: 40% !important;">
+            <div class='close'>&#10006;</div><!-- close button-->
+            <h1>Sorted !</h1> <!-- title food the popup-->
+            <!-- popup content goes here -->
+            <h2>List has been sorted by Price</h2>
+        </div>
+    </div>
+    <div class="poi-background" >
+        <div class="food-item-list" id="food-item-list">
+        </div>
+    </div>
+    <br>
+
+</div>
+
+</div>
+
+////////////////////////////////////////////////////////////////////////////////////
+
+<!-- home pagee -->
+
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed" class="ui-grid-a header">
+
+        <img class="potrait-home-logo" src="images/logo/Food Centric-logos_transparent.png"/>
+        <div class="ui-block-a">
+        </div>
+        <div class="ui-block-b center">
+            <p class="header-block-two">
+            </p>
+        </div>
+
+    </div>
+    <div data-role="navbar"></div>
+
+    <div  data-position="fixed" class="secondnav">
+        <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+
+        </a>
+        <p style="color: white; text-align: center;">home page </p>
+
+    </div>
+
+
+
+    <div class="homefinal">
+        <div class="thirdnav" data-position="fixed">
+            <a href="#deals-dealing-now"> <img class="image1" src="images/rounded-icons/image1.png"></img><br><br><br><br><br></a>  
+
+            <img class="image2" src="images/rounded-icons/image2.png"></img><br><br>
+            <a href="#googlemap">
+                <img class="image3"src="images/rounded-icons/image3.png"></img><br><br>
+            </a>
+            <a href="#ratingpage">
+                <img class="image4" src="images/rounded-icons/image4.png"></img><br><br>
+            </a>
+            <img class="image5"src="images/rounded-icons/image5.png"></img><br><br>
+            <img class="image6"src="images/rounded-icons/image6.png"></img><br><br>
+            <img class="image7"src="images/rounded-icons/image7.png"></img><br><br>
+        </div>
+        <div class="gayalhiru" data-role="main">
+
+            <div id="intro-welcome" class="intro-welcome-div">
+                <h1>hi, Gayal</h1>
+                <p>Time to Grab a meal</p>
+            </div>
+
+            <div class="rounded-icons-group">
+                <div  class="home-search-input">
+                    <input class="mb-0" type="text" placeholder="  &#xf002;   Contact Number" style="font-family:Arial, FontAwesome; text-align: center;margin-top: 5%;" />
+                </div>
+                <div class="rounded-icon">
+                    <img class="fast-food" src="images/rounded-icons/fast-food.png"></img>
+                    <p class="rounded-icon-fd-name">Fast food</p>
+                </div>
+
+                <div class="rounded-icon">
+                    <img class="rounded-icon-img" src="images/rounded-icons/pizza.png"></img>
+                    <p class="rounded-icon-name">Pizza</p>
+                </div>
+                <div class="rounded-icon">
+                    <img class="rounded-icon-img" src="images/rounded-icons/chinese.png"></img>
+                    <p class="rounded-icon-chinese-name">Chinese</p>
+                </div>
+                <div class="rounded-icon">
+                    <img class="rounded-icon-img" src="images/rounded-icons/more.png"></img>
+                    <p class="rounded-icon-name">More</p>
+                </div>
+            </div>
+            <div class="food-items-list-header">
+                <h3>Play List</h3>
+                <a href="#">Check all</a>
+            </div>
+            <div class="food-item-list-pt" id="food-item-list-pt">
+
+                <div class="iframe-container">
+                    <!-- <iframe width="360" height="315" src="https://www.youtube.com/embed/watch?v=9YffrCViTVk"></iframe> -->
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/2eETWRNjFn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="iframe-container">
+                    <!-- <iframe width="360" height="315" src="https://www.youtube.com/embed/watch?v=9YffrCViTVk"></iframe> -->
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/hZEdrzVHAbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+            </div>
+            <div class="food-menu-list-header">
+                <h3>Food menu</h3>
+                <a href="#">Check all</a>
+            </div>
+            <div class="food-item-menu" >
+
+                <div class="menu-container">
+
+
+                </div>
+                <div class="menu-container" style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image 5.png"></img>
+                    <p class="font-design">Rice and Currry</p>
+                    <p class="font-design-pr">Dictum tortor nunc nibh </p>
+                    <p class="font-design-price">Rs 250.00</p>
+                </div>
+                <div class="menu-container"  style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image1.jpg"></img>
+                    <p class="font-design" >Rice and Currry</p>
+                    <p class="font-design-pr"  >Dictum tortor nibh </p>
+                    <p class="font-design-price" >Rs 250.00</p>
+                </div>
+                <div class="menu-container"  style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image2.jpg"></img>
+                    <p class="font-design"> Rice and Currry</p>
+                    <p class="font-design-pr">Dictum tortor nunc nibh</p>
+                    <p class="font-design-price">Rs 250.00</p>
+                </div>
+                <div class="menu-container"  style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image 5.png"></img>
+                    <p class="font-design">Rice and Currry</p>
+                    <p class="font-design-pr">Dictum tortor nunc nibh</p>
+                    <p class="font-design-price">Rs 250.00</p>
+                </div>
+                <div class="menu-container"  style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image1.jpg"></img>
+                    <p class="font-design">Rice and Currry</p>
+                    <p class="font-design-pr">Dictum tortor nunc nibh</p>
+                    <p class="font-design-price">Rs 250.00</p>
+                </div>
+                <div class="menu-container"  style="line-height: 5px;">
+                    <img class="image-menu" src="images/cart-images/image2.jpg"></img>
+                    <p class="font-design">Rice and Currry</p>
+                    <p class="font-design-pr">Dictum tortor nunc nibh</p>
+                    <p class="font-design-price">Rs 250.00</p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+<!-- google map page  -->
+<div data-role="page" id="googlemap">
+    <div data-role="header" data-position="fixed" class="ui-grid-a header">
+        <img class="potrait-home-logo2" src="images/logo/Food Centric-logos_transparent.png"/>
+        <div class="ui-block-a">
+        </div>
+        <div class="ui-block-b center">
+            <p class="header-block-two">
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="secondnav">
+        <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </a>
+        <p style="color: white; text-align: center;">GoogleMap page </p>
+
+        <div id="googleMap" style="width:89%;height:1000px;margin-left: 12.5% ;"></div>
+
+
+    </div>
+    <div class="thirdnav">
+        <a href="#home">
+            <img class="image1" src="images/rounded-icons/image1.png"></img><br><br><br><br><br>
+        </a>
+
+        <img class="image2" src="images/rounded-icons/image2.png"></img><br><br>
+
+        <img class="image3"src="images/rounded-icons/image3.png"></img><br><br>
+        <a href="#ratingpage">
+            <img class="image4" src="images/rounded-icons/image4.png"></img><br><br>
+        </a>
+        <img class="image5"src="images/rounded-icons/image5.png"></img><br><br>
+        <img class="image6"src="images/rounded-icons/image6.png"></img><br><br>
+        <img class="image7"src="images/rounded-icons/image7.png"></img><br><br>
+    </div>
+
+
+    <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
+
+    <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+
+
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHFh_Wp8Yi1hWSmNT6qFdjoha1Xzm4rLk&callback=myMap"></script>
+
+
+
+
+</div>
+
+
+<!-- rating page -->
+<div data-role="page" id="ratingpage">
+    <div data-role="header" data-position="fixed" class="ui-grid-a header">
+        <img class="potrait-home-logo3" src="images/logo/Food Centric-logos_transparent.png"/>
+        <div class="ui-block-a">
+        </div>
+        <div class="ui-block-b center">
+            <p class="header-block-two">
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="secondnav">
+        <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
+            <span class="iconify hambuger-icon" data-icon="dashicons:menu" style="color: white;" data-width="50" data-height="50"></span>
+        </a>
+        <p style="color: white; text-align: center;">Rating page </p>
+        <div class="card">
+            <div class="rating-container">
+                <div   clss="gayal">
+                    <img class ="ratingimage"src="images/food-images/chikenpasta.jpg" style="width:500px" height="150px"></img>
+                </div>
+
+
+                <div clss="gayal">
+                    <h3><b>chiken pasta</b></h3>
+                    <p style="color:#1b6866;font-size: 20px;">Rs 620.00</p>
+                    <p>Fresh chiken pepperoni in pastalayer of  mozzeralla chease Fresh chiken pepperoni in pasta layer of mozzeralla chease </p>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="card1">
+
+                    <img class="card13"src="images/background/star.JPG"style="margin-left: 5%;padding-bottom:60px">
+                    <p id="val" style="font-size: 40px; color:grey"></p>
+                    <p  style="font-size: 40px; color:grey">Reviews</p>
+
+                <img class="card13" src="images/background/Capture.JPG"  style="margin-bottom:100%;padding-left:30%;width:60%;">
+
+
+
+
+
+
+
+              </div> -->
+            <div class="card2">
+                <img class="card14"src="images/background/star.JPG">
+
+
+                <img class="card13" src="images/background/Capture.JPG"  style="">
+            </div>
+            <div class="review-rating" style="line-height: 5px;">
+                <p id="val-pt" style="font-size: 40px; color:grey; padding-left: 10%;"></p>
+                <p  style="font-size: 40px; color:grey;padding-bottom:10px;padding-left: 15px;" >Reviews</p>
+            </div>
+
+
+            <div class="question" style="line-height: 5px;"> <h4> How was  your order from nelum food</h4><h4>Center</h4></div>
+            <div class="star-container" style="text-align: center;">
+                <i id="star1" class="fa fa-star-o"></i>
+                <i id="star2" class="fa fa-star-o"></i>
+                <i id="star3" class="fa fa-star-o"></i>
+                <i id="star4" class="fa fa-star-o"></i>
+                <i id="star5" class="fa fa-star-o"></i>
+            </div>
+
+        </div>
+
+        <div class="name">
+            <p style="padding-left:25%;font-size: 25px;padding-top: 10px;">Show your name ?</p>
+            <div class="container">
+                <div class="toggle-btn">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <button id="review-btn" class="button">submit</button> -->
+        <!-- <a href="#" class="ui-btn" data-role="button" style="background-color: #E84C4F;color: white;width: 20%;">Anchor</a> -->
+        <button id="review-btn" class="ui-btn" style="background-color: #E84C4F;color: white;width: 30%;margin-left: 40%;margin-top: 10%;height: 70%;border-radius: 10px;">Submit</button>
+
+
+
+    </div>
+    <div class="thirdnav">
+        <a href="#home">
+            <img class="image1" src="images/rounded-icons/image1.png"></img><br><br><br><br><br>
+        </a>
+
+        <img class="image2" src="images/rounded-icons/image2.png"></img><br><br>
+
+        <a href="#googlemap">
+            <img class="image3"src="images/rounded-icons/image3.png"></img><br><br>
+        </a>
+        <img class="image4"src="images/rounded-icons/image4.png"></img><br><br>
+
+        <img class="image5"src="images/rounded-icons/image5.png"></img><br><br>
+        <img class="image6"src="images/rounded-icons/image6.png"></img><br><br>
+        <img class="image7"src="images/rounded-icons/image7.png"></img><br><br>
+    </div>
+
+
+</div>
+
+
+<script>
+
+    var review = 0
+    var hr='Review';
+    var count_review = document.getElementById('review-btn');
+
+    count_review.onclick = function () {
+        review = review + 1;
+        localStorage.setItem('review', review);
+        document.getElementById('val-pt').innerHTML = localStorage.getItem('review');
+
+    }
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('.toggle-btn').click(function(){
+
+            $(this).toggleClass(".toggle-btn active");
+
+        });
+    });
+
+
+</script>
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+<script src="js/Ipad_Landscape.js"></script>
+
+
+
+</body>
+</html>
